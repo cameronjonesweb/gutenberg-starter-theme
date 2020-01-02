@@ -5,7 +5,6 @@
  * @package gutenberg-starter-theme
  */
 
-
 if ( ! defined( 'ABSPATH' ) ) {
 	die();
 }
@@ -16,10 +15,10 @@ add_action( 'init', 'gutenberg_starter_register_scripts' );
  * Register all the scripts and styles our theme has
  */
 function gutenberg_starter_register_scripts() {
-	wp_register_style( 'bulma', get_template_directory_uri() . '/css/bulma/bulma.min.css' );
-	wp_register_style( 'theme', get_stylesheet_uri() );
-	wp_register_style( 'theme-block-editor', get_template_directory_uri() . '/css/blocks/editor.css' );
-	wp_register_style( 'theme-quote', get_template_directory_uri() . '/css/blocks/core-quote.css' );
+	wp_register_style( 'bulma', get_template_directory_uri() . '/css/bulma/bulma.min.css', array() );
+	wp_register_style( 'theme', get_stylesheet_uri(), [] );
+	wp_register_style( 'theme-block-editor', get_template_directory_uri() . '/css/blocks/editor.css', array() );
+	wp_register_style( 'theme-quote', get_template_directory_uri() . '/css/blocks/core-quote.css', array() );
 }
 
 add_action( 'wp_enqueue_scripts', 'gutenberg_starter_common_scripts' );
@@ -51,10 +50,10 @@ add_action( 'enqueue_block_assets', 'gutenberg_starter_block_assets' );
 function gutenberg_starter_block_assets() {
 	register_block_style(
 		'core/quote',
-		[
+		array(
 			'name'         => 'gutenberg-starter-quote',
 			'label'        => 'Gutenberg Starter Quote',
 			'style_handle' => 'theme-quote',
-		]
+		)
 	);
 }

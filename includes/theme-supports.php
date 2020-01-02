@@ -31,83 +31,83 @@ function gutenberg_starter_theme_supports() {
  * Get the theme colour palette
  */
 function gutenberg_starter_theme_colour_palette() {
-	return [
-		[
+	return array(
+		array(
 			'name'  => 'White',
 			'slug'  => 'white',
 			'color' => 'hsl(0, 0%, 100%)',
-		],
-		[
+		),
+		array(
 			'name'  => 'Black',
 			'slug'  => 'black',
 			'color' => 'hsl(0, 0%, 4%)',
-		],
-		[
+		),
+		array(
 			'name'  => 'Light',
 			'slug'  => 'light',
 			'color' => 'hsl(0, 0%, 96%)',
-		],
-		[
+		),
+		array(
 			'name'  => 'Dark',
 			'slug'  => 'dark',
 			'color' => 'hsl(0, 0%, 21%)',
-		],
-		[
+		),
+		array(
 			'name'  => 'Primary',
 			'slug'  => 'primary',
 			'color' => 'hsl(171, 100%, 41%)',
-		],
-	];
+		),
+	);
 }
 
 /**
  * Get the theme font sizes
  */
 function gutenberg_starter_theme_font_sizes() {
-	return [
-		[
+	return array(
+		array(
 			'name'      => __( 'Size 7' ),
 			'shortName' => __( '7' ),
 			'size'      => calc_px_from_rem( .75 ),
 			'slug'      => '7',
-		],
-		[
+		),
+		array(
 			'name'      => __( 'Size 6' ),
 			'shortName' => __( '6' ),
 			'size'      => calc_px_from_rem( 1 ),
 			'slug'      => '6',
-		],
-		[
+		),
+		array(
 			'name'      => __( 'Size 5' ),
 			'shortName' => __( '5' ),
 			'size'      => calc_px_from_rem( 1.25 ),
 			'slug'      => '5',
-		],
-		[
+		),
+		array(
 			'name'      => __( 'Size 4' ),
 			'shortName' => __( '4' ),
 			'size'      => calc_px_from_rem( 1.5 ),
 			'slug'      => '4',
-		],
-		[
+		),
+		array(
 			'name'      => __( 'Size 3' ),
 			'shortName' => __( '3' ),
 			'size'      => calc_px_from_rem( 2 ),
 			'slug'      => '3',
-		],
-		[
+		),
+		array(
 			'name'      => __( 'Size 2' ),
 			'shortName' => __( '2' ),
 			'size'      => calc_px_from_rem( 2.5 ),
 			'slug'      => '2',
-		],
-		[
+		),
+		array(
 			'name'      => __( 'Size 1' ),
 			'shortName' => __( '1' ),
 			'size'      => calc_px_from_rem( 3 ),
 			'slug'      => '1',
-		],
-	];
+		),
+	);
 }
 
 /**
