@@ -1,0 +1,8 @@
+.wp-block-quote {
+	margin-bottom: 1rem;
+}
+
+.wp-block-quote.is-large,
+.wp-block-quote.is-style-large {
+	margin: 0 auto 1rem;
+}

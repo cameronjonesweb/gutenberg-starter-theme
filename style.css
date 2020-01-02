@@ -1,0 +1,79 @@
+/*
+Theme Name: Gutenberg Starter Theme
+Description: A starter theme for Gutenberg
+Author: Cameron Jones
+Author URI: https://cameronjonesweb.com.au
+*/
+
+#content {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+.wrap {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrap-items > * {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignwide {
+	max-width: 1344px;
+}
+
+.alignfull {
+	max-width: 100%;
+}
+
+.has-black-color {
+	color: hsl(0, 0%, 4%);
+}
+
+.has-black-background-color {
+	background-color: hsl(0, 0%, 4%);
+}
+
+.has-white-color {
+	color: hsl(0, 0%, 100%);
+}
+
+.has-white-background-color {
+	background-color: hsl(0, 0%, 100%);
+}
+
+.has-light-color {
+	color: hsl(0, 0%, 96%);
+}
+
+.has-light-background-color {
+	background-color: hsl(0, 0%, 96%);
+}
+
+.has-dark-color {
+	color: hsl(0, 0%, 21%);
+}
+
+.has-dark-background-color {
+	background-color: hsl(0, 0%, 21%);
+}
+
+.has-primary-color {
+	color: hsl(171, 100%, 41%);
+}
+
+.has-primary-background-color {
+	background-color: hsl(171, 100%, 41%);
+}
