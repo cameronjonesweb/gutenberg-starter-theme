@@ -15,10 +15,10 @@ add_action( 'init', 'gutenberg_starter_register_scripts' );
  * Register all the scripts and styles our theme has
  */
 function gutenberg_starter_register_scripts() {
-	wp_register_style( 'bulma', get_template_directory_uri() . '/css/bulma/bulma.min.css', array() );
-	wp_register_style( 'theme', get_stylesheet_uri(), [] );
-	wp_register_style( 'theme-block-editor', get_template_directory_uri() . '/css/blocks/editor.css', array() );
-	wp_register_style( 'theme-quote', get_template_directory_uri() . '/css/blocks/core-quote.css', array() );
+	wp_register_style( 'bulma', get_template_directory_uri() . '/css/bulma/bulma.min.css', array(), filemtime( get_template_directory() . '/css/bulma/bulma.min.css' ) );
+	wp_register_style( 'theme', get_stylesheet_uri(), array(), filemtime( get_template_directory() . '/style.css' ) );
+	wp_register_style( 'theme-block-editor', get_template_directory_uri() . '/css/blocks/editor.css', array(), filemtime( get_template_directory() . '/css/blocks/editor.css' ) );
+	wp_register_style( 'theme-quote', get_template_directory_uri() . '/css/blocks/core-quote.css', array(), filemtime( get_template_directory() . '/css/blocks/core-quote.css' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'gutenberg_starter_common_scripts' );

@@ -18,7 +18,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 					if ( has_custom_logo() ) {
 						the_custom_logo();
 					} else {
-						bloginfo( 'name' );
+						printf(
+							'<a href="%1$s" class="has-text-white">%2$s</a>',
+							esc_url( home_url() ),
+							esc_html( get_bloginfo( 'name' ) )
+						);
 					}
 					?>
 				</div>
