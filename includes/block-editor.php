@@ -16,11 +16,5 @@ add_filter( 'use_block_editor_for_post', 'gutenberg_starter_use_block_editor', 1
  * @return bool
  */
 function gutenberg_starter_use_block_editor( $use_block_editor, $post ) {
-	if ( 'page' === get_post_type( $post ) ) {
-		$use_block_editor = false;
-	}
-	if ( ! empty( $post->post_content ) && ! has_blocks( $post ) ) {
-		$use_block_editor = false;
-	}
 	return $use_block_editor;
 }
