@@ -48,12 +48,22 @@ add_action( 'enqueue_block_assets', 'gutenberg_starter_block_assets' );
  * Enqueue scripts and styles for blocks both on the front end and in the block editor
  */
 function gutenberg_starter_block_assets() {
+	wp_enqueue_style( 'theme-quote' );
+}
+
+add_action( 'after_setup_theme', 'gutenberg_starter_block_styles' );
+
+/**
+ * Register custom block styles
+ */
+function gutenberg_starter_block_styles() {
 	register_block_style(
 		'core/quote',
 		array(
-			'name'         => 'gutenberg-starter-quote',
-			'label'        => 'Gutenberg Starter Quote',
-			'style_handle' => 'theme-quote',
+			'name'         => 'small-quote',
+			'label'        => __( 'Small' ),
+			'inline_style' => '.wp-block-quote.is-style-small-quote { font-size: .75rem; }',
+			// 'style_handle' => 'my-registered-block-style-handle',
 		)
 	);
 }
