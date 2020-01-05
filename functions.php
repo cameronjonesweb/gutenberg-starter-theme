@@ -12,3 +12,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once 'includes/theme-supports.php';
 require_once 'includes/scripts-and-styles.php';
 require_once 'includes/block-rendering.php';
+require_once 'includes/block-templates.php';
